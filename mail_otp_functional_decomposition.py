@@ -26,7 +26,7 @@ def main():
     """Send the OTP to the user's email and verify it"""
     otp = str(generate_otp())
     email_id = input("Enter your email: ")
-    user_input = input("Enter Your OTP >>:")
+    user_input = input("Enter Your OTP >>")
     send_email(otp, email_id)
     if(verify_otp(otp,user_input)):
         print("OTP veriied")
