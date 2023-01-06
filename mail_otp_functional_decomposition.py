@@ -11,7 +11,7 @@ def send_email(otp, email_id):
     sender_email = 'prajwaltupare@gmail.com'
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("prajwaltupare@gmail.com", "lzmetvnxubglxicv")
+    server.login("prajwaltupare@gmail.com", "password")
     server.sendmail(sender_email, email_id, msg)
 
 def verify_otp(user_input,otp):
