@@ -16,7 +16,7 @@ class OTPVerification:
         sender_email = 'prajwaltupare@gmail.com'
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("prajwaltupare@gmail.com", "lzmetvnxubglxicv")
+        server.login("prajwaltupare@gmail.com", "password")
         server.sendmail(sender_email, self.email_id, msg)
     
     def verify_otp(self):
