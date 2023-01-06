@@ -4,7 +4,7 @@ import smtplib
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("prajwaltupare@gmail.com", "lzmetvnxubglxicv")
+server.login("prajwaltupare@gmail.com", "password")
 
 def generate_otp():
     otp = random.randint(100000, 999999)
